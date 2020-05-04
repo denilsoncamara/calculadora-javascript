@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  color: #222;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.main {
+  max-width: 510px;
+  margin: 100px auto 0;
+}
+
+.main > h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#app {
+  width: 385px;
+  height: 324px;
+  margin: 30px auto 0;
+  padding: 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+#app > .display {
+  outline: none;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  height: 72px;
+  padding: 10px;
+  font-size: 3.2rem;
+  text-align: right;
+}
+
+#app > .keyboard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 5px;
+}
+
+.keyboard li {
+  cursor: pointer;
+  width: 81px;
+  height: 36px;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  background-color: #f1f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s linear;
+}
+
+.keyboard li:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.keyboard .keys1 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.keyboard > div {
+  display: flex;
+  flex: 4;
+  height: 100%;
+}
+
+.keyboard .keys2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.keyboard .keys3 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  flex: 1;
+}
+
+.keyboard .keys1 li,
+.keyboard .keys3 li {
+  background-color: #dfe1e5;
+}
+
+.keyboard .keys1 li:hover,
+.keyboard .keys3 li:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.keyboard .keys2 li:last-child {
+  color: #fff;
+  font-weight: bold;
+  background-color: #4285F4;
+}
